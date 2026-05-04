@@ -29,6 +29,10 @@ let createNewUser = async (data) => {
                 roleId: data.roleId
             })
             resolve('OK create a new user successfull');
+            
+            // console.log('data from service');
+            // console.log(data); //log dữ liệu từ biến data
+            // console.log(hashPasswordFromBcrypt);
         } catch (e) {
             reject(e);
         }
